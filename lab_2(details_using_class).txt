@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<conio.h>
+class student
+	{
+		int roll_no;
+		char name[50];
+		char branch[50];
+		public:
+                void read()
+                  {			
+                    cout<<"\n name=";
+                    cin>>name;
+                    cout<<"\n roll no.=";  
+	            cin>>roll_no;
+                    cout<<"\n branch="; 
+                    cin>>branch;
+                  } 
+                 void display()
+                   {
+                     cout<<"\n name="<<name;
+                     cout<<"\n roll number="<<roll_no;
+                     cout<<"\n branch="<<branch;
+                   }
+          };
+	
+void main()
+{
+   clrscr();
+   student s1,s2;
+   cout<<"ENTER STUDENT DETAILS\n";
+   s1.read();
+   s2.read();
+   cout<<"STUDENT'S ENTERED DETAILS ARE";
+   s1.display();
+   s2.display();
+   getch();
+}

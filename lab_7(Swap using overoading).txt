@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+void sawp(int a, int b)
+{
+       int c;	
+       c=a;
+       a=b;
+       b=c;
+       cout<<" value After Swap"<<a<<b<<endl;
+}
+void sawp(float a, float b)
+{
+       float c;	
+       c=a;
+       a=b;
+       b=c;
+       cout<<" value After Swap"<<a<<b<<endl;
+}
+void main()
+{
+	clrscr();
+        int p,q;
+	cout<<"Enter two integer values: ";
+	cin>>p>>q;
+        swap(p,q);
+        cout<<"Enter two float values: ";
+	cin>>r>s;
+        swap(r,s);
+        getch();
+}
